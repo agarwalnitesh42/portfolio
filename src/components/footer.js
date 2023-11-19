@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { FormattedIcon } from '@components/icons';
-import { socialMedia } from '@config';
-import styled from 'styled-components';
-import { theme, mixins, media } from '@styles';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { FormattedIcon } from "@components/icons";
+import { socialMedia } from "@config";
+import styled from "styled-components";
+import { theme, mixins, media } from "@styles";
 const { colors, fontSizes, fonts } = theme;
 
 const StyledContainer = styled.footer`
@@ -67,19 +67,19 @@ const Footer = () => {
   });
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== "production") {
       return;
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
-      .then(response => response.json())
-      .then(json => {
+    fetch("https://api.github.com/repos/bchiang7/v4")
+      .then((response) => response.json())
+      .then((json) => {
         const { stargazers_count, forks_count } = json;
         setGitHubInfo({
           stars: stargazers_count,
           forks: forks_count,
         });
       })
-      .catch(e => console.error(e));
+      .catch((e) => console.error(e));
   }, []);
 
   return (
@@ -93,7 +93,8 @@ const Footer = () => {
                   href={url}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  aria-label={name}>
+                  aria-label={name}
+                >
                   <FormattedIcon name={name} />
                 </StyledSocialLink>
               </li>
@@ -104,11 +105,9 @@ const Footer = () => {
         <StyledGitHubLink
           href="https://github.com/bchiang7/v4"
           target="_blank"
-          rel="nofollow noopener noreferrer">
-          <div>
-            Designed &amp; Built by Brittany Chiang<br></br>
-            Revised by Yashita Namdeo
-          </div>
+          rel="nofollow noopener noreferrer"
+        >
+          <div>Revised by Nitesh Agarwal</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <StyledGitHubInfo>

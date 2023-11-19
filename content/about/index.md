@@ -1,6 +1,6 @@
 ---
-title: 'About Me'
-avatar: 'me.jpg'
+title: "About Me"
+avatar: "me.jpg"
 skills:
   - Coding
   - Reading
@@ -11,7 +11,7 @@ skills:
   - Mentoring
 ---
 
-Hello! I'm Yashita Namdeo, from Indore, also known as Mini Mumbai and the Cleanest City of India.
+Hello! I'm Nitesh Agarwal, from Indore, also known as Mini Mumbai and the Cleanest City of India.
 
 I am a creative, time punctual, dedicated, goal-oriented individual with decent moral Values and Ethicates along with a high-energy level, honed communication skills, strong organizational skills, and meticulous attention to detail.
 
